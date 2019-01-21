@@ -1,6 +1,6 @@
-# CSS Masterclass
+# CSS Practices
 
-CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
+CSS Pratices (Flexbox, Grid, PostCSS, CSSNext)
 
 ### CSS Flex
 
