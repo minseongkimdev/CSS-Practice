@@ -1,13 +1,13 @@
 {
   "name": "css-masterclass",
   "version": "1.0.0",
-  "description": "CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)",
+  "description": "CSS Practices (Flexbox, Grid, PostCSS, CSSNext)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nomadcoders/css-masterclass.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "김민성 <yssj2049@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nomadcoders/css-masterclass/issues"
@@ -25,5 +25,6 @@
         "stage": 0
       }
     }
-  }
+  },
+  "main": "index.js"
 }
