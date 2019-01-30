@@ -9,28 +9,44 @@
         <style>
             .father {
                 display: grid;
-                grid-template-columns: 30px 50px;
-                grid-template-rows: 30px 12px;
-                grid-gap: 10px;
+                grid-auto-rows: 200px;
+                grid-gap: 5px;
+                grid-template-areas: "header header header"
+                    "content content sidebar"
+                    "content content sidebar"
+                    "footer footer footer";
+
             }
 
-            .box {
+            .box1 {
+                grid-area: header;
                 background-color: greenyellow;
+            }
+
+            .box2 {
+                grid-area: sidebar;
+                background-color: blueviolet;
+            }
+
+            .box3 {
+                grid-area: footer;
+                background-color: yellow;
+            }
+
+            .box4 {
+                grid-area: content;
+                background-color: skyblue;
             }
         </style>
     </head>
 
     <body>
         <div class="father">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+
         </div>
     </body>
 
