@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>CSS Grid</title>
-        <style>
-            .father {
-                display: grid;
-                grid-auto-rows: 200px;
-                grid-gap: 5px;
-                grid-template-areas: "header header header"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Grid</title>
+    <style>
+      .father {
+        display: grid;
+        grid-auto-rows: 200px;
+        grid-gap: 5px;
+        grid-template-columns: minmax(400px, 2fr) repeat(3, 1fr);
+        /* grid-template-areas: "header header header"
                     "content content sidebar"
                     "content content sidebar"
-                    "footer footer footer";
+                    "footer footer footer"; */
+      }
 
-            }
+      .box1 {
+        /* grid-area: header; */
+        background-color: greenyellow;
+      }
 
-            .box1 {
-                grid-area: header;
-                background-color: greenyellow;
-            }
+      .box2 {
+        /* grid-area: sidebar; */
+        background-color: blueviolet;
+      }
 
-            .box2 {
-                grid-area: sidebar;
-                background-color: blueviolet;
-            }
+      .box3 {
+        /* grid-area: footer; */
+        background-color: yellow;
+      }
 
-            .box3 {
-                grid-area: footer;
-                background-color: yellow;
-            }
+      .box4 {
+        /* grid-area: content; */
+        background-color: skyblue;
+      }
+    </style>
+  </head>
 
-            .box4 {
-                grid-area: content;
-                background-color: skyblue;
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="father">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-
-        </div>
-    </body>
-
+  <body>
+    <div class="father">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+  </body>
 </html>
